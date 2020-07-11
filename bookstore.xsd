@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+<element name="bookstore">
+<complexType>
+<sequence>
+<element name="book" maxOccurs="unbounded">
+<complexType>
+<sequence>
+<element name="title"       type="string"/>
+<element name="author"  type="string"/>
+<element name="ISBN"    type="string"/>
+<element name="publisher"  type="string"/>
+<element name="edition"  type="int"/>
+<element name="price"     type="decimal"/>
+ </sequence>
+</complexType>
+</element>
+</sequence>
+</complexType>
+</element>
+</schema>

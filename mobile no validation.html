@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>mobile no. validation</title>
+<script>
+function validate()
+{
+var mob=document.getElementById("text").value
+var regx=/^[0]?[6789]\d{9}$/
+if(regx.test(mob))
+{
+document.getElementById("lbl").innerHTML="valid";
+document.getElementById("lbl").style.visibility="visible";
+document.getElementById("lbl").style.color="blue";
+return true;
+}
+else
+{
+document.getElementById("lbl").innerHTML="invalid";
+document.getElementById("lbl").style.visibility="visible";
+document.getElementById("lbl").style.color="red";
+return false;
+}
+}
+</script>
+
+<body>
+<form action="login.html" onsubmit="return validate()">
+Mobile no:
+<input id="text" type="text"/>
+<label id="lbl" style="color: red; visibility: hidden">invalid number</label><br>
+<button onclick="validate()" "type="button">submit</button>
+</form>
+</body>
+</html>

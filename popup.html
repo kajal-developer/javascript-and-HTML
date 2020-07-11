@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Popup Boxes</title>
+</head>
+<body>
+<h1><font face ="TIMES NEW ROMAN"><u>Popup Boxes</u> </h1>
+
+<h1><font face ="TIMES NEW ROMAN"><u>Alert box</u> </h1>
+<button onclick ="f()">
+Click here for alert box
+</button> 
+<script>
+function f() {
+alert("Hey , I am alert box.");
+}
+</script>
+<h1><font face ="TIMES NEW ROMAN"><u>Confirm box </u></h1>
+<button onclick ="f1()">
+Click here for Confirm box
+</button>
+<p id="abc"></p>
+<script>
+function f1() {
+var x ;
+if(confirm("Press a button !")==true){
+x = "OK pressed !";
+}
+else{
+x="cancel"
+}
+document.getElementById("abc").innerHTML=x;
+}
+</script>
+<h1><font face ="TIMES NEW ROMAN"><u>Prompt box </u></h1>
+<input type ="button" onclick ="f2()" value="Click here for Prompt box"/>
+<script>
+
+function f2(){
+var x=prompt("Enter your name here : ");
+document.write("Your name : "+x);
+}
+</script>
+</body>
+</html>
